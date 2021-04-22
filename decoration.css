@@ -853,13 +853,6 @@ figure.snip1104 {
 	align-items: center;
 }
 
-
-.alert{
-	display: block;
-	text-align: center;
-	margin: 5% 0 0 0 ;
-}
-
 }
 
 
@@ -895,13 +888,6 @@ figure.snip1104 {
 .column img{
 	padding: 15px;
 	margin: 0 auto;
-}
-
-
-.alert{
-	display: block;
-	text-align: center;
-	margin: 5% 0 0 0 ;
 }
 
 }
