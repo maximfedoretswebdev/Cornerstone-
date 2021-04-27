@@ -574,29 +574,41 @@ nav li{
 
 
 
+
+
+
 .upcomingevents{
-	background-image: url("Cornerstoneteam.jpg");
-	background-repeat: none;
-	background-position: top center;
-	background-size: cover;
-	text-align: center;
+	width: 100%;
+	background-color: #ffffff;
+	color: #000000;
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 	align-items: center;
-	align-content: center;
-	color: white;
-	padding: 20px;
+	text-align: center;
+}
+
+.upcomingevents_pic{
+	margin: 3% 0 1% -2%;
 }
 
 .events h1{
-	padding-top: 30px;
-	font-size: 5rem;
-	font-weight: bolder;
+	margin-bottom: 8%;
+	font-weight: bold;
+	font-size: 4rem;
 }
 
-.events h5{
-	font-weight: normal;
-	margin-bottom: 2%;
+.events p{
+	font-size: 1.3rem;
+	margin-bottom: 5%;
 }
 
+#learnmore{
+	border: none;
+	border-bottom: 1px solid black;
+	border-radius: 0;
+	font-weight:bolder;
+}
 
 
 
@@ -604,29 +616,113 @@ nav li{
 /* MEDIA QUERIES */
 @media screen and (max-width: 767px){
 
-.upcomingevents{
-	background-image: url("Cornerstoneteam.jpg");
-	background-repeat: none;
-	background-position: top center;
-	background-size: cover;
-	text-align: center;
-	align-items: center;
-	align-content: center;
-	color: white;
-	padding: 20px;
+	.upcomingevents{
+		padding-top: 25px;
+		margin-top: 0;
+		background-color: #f5f5f7;
+		color: #000000;
+		display: inline-flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		text-align: center;
+	}
+	
+	.upcomingevents_pic{
+		display: none;
+	}
+	
+	.events h1{
+		margin-bottom: 5%;
+		font-weight: bold;
+		font-size: 3rem;
+		overflow: hidden;
+	}
+	
+	.events p{
+		font-size: 1.2rem;
+		margin-bottom: 5%;
+		padding: 15px;
+	}
+	
+	#learnmore{
+		border: none;
+		border-bottom: 1px solid black;
+		border-radius: 0;
+		font-weight:bolder;
+		margin-bottom: 10%;
+	}
+	
 }
 
-.events h1{
-	padding-top: 30px;
-	font-size: 3rem;
-	font-weight: bolder;
+
+
+/* MEDIA QUERIES IPAD*/
+@media screen and (min-width:768px) and (max-width: 1023px){
+
+	.upcomingevents{
+		margin-top: 0;
+		background-color: #f5f5f7;
+		color: #000000;
+		display: inline-flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		text-align: center;
+	}
+	
+	.upcomingevents_pic{
+		display: block;
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	
+	.events h1{
+		margin-bottom: 5%;
+		font-weight: bold;
+		font-size: 4rem;
+		overflow: hidden;
+	}
+	
+	.events p{
+		font-size: 1.3rem;
+		margin-bottom: 3%;
+		padding: 15px;
+	}
+	
+	#learnmore{
+		border: none;
+		border-bottom: 1px solid black;
+		border-radius: 0;
+		font-weight:bolder;
+		margin-bottom: 10%;
+		font-size: 1.3rem;
+	}
+
+
 }
 
-.events h5{
-	font-weight: normal;
-	margin-bottom: 2%;
-}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
