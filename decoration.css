@@ -4,7 +4,7 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
-
+/*NAVIGATION DECOR*/
 nav li{
 	font-size: 1.2rem;
 	font-weight: normal;
@@ -19,18 +19,29 @@ nav img{
 }
 
 
+/*INTRO DECOR*/
 .intro{
-	margin-top: 5%;
-	width: 100%;
-	display: inline-flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	align-items: center;
-	text-align: center;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
 }
 
 .welcome_pic{
-	padding: 5px;
+	background-size: contain;
+    margin: 0;
+    padding: 0;
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+
+.welcome_pic img{
+	width: 100%;
+    object-fit: cover;
+    user-select: none;
+    vertical-align: middle;
+    border-style: none;
 }
 
 .welcome_pic_two{
@@ -38,13 +49,18 @@ nav img{
 }
 
 .welcome_intro{
-	padding: 5px;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	align-content: center;
+	color: #2d2d2d;
+	vertical-align: middle;
+	margin-top: 10%;
 }
 
 .welcome_intro h1{
-	font-size: 5rem;
-	font-weight: 1000;
-	margin-bottom: 5%
+    margin-bottom: 5%;
+	font-weight: bolder;
 
 }
 
@@ -234,29 +250,42 @@ nav li{
 
 
 .about{
-	margin-top: 2%;
 	width: 100%;
 	display: inline-flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
 	text-align: center;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 .about_pic{
-	padding: 10px;
+	background-size: contain;
+    margin: 0;
+    padding: 0;
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+
+.about_pic img{
+	width: 100%;
+    object-fit: cover;
+    user-select: none;
+    vertical-align: middle;
+    border-style: none;
 }
 
 
 .about_intro h1{
 	font-size: 5rem;
-	font-weight: 1000;
+	font-weight: bolder;
 	margin-bottom: 5%
 
 }
 
 .about_intro p{
-	padding: 20px;
+	padding: 20px 20px 0 20px;
 	text-align: left;
 	text-indent: 30px;
 	font-size: 1.2rem;
@@ -283,10 +312,19 @@ nav li{
 }
 
 .about_pic{
-	width: 100%;
-	overflow: none;
+	background-size: cover;
+	margin: 3% 0 0 0;
 	padding: 0;
-	margin: 0;
+	max-width: 100%;
+}
+
+.about_pic img{
+	width: 100%;
+	height: 50vh;
+	object-fit: contain;
+	user-select: none;
+	vertical-align: middle;
+	border-style: none;
 }
 
 .about_intro h1{
@@ -364,11 +402,10 @@ nav li{
 
 
 .hours{
-	margin-top: 3%;
 	background-color: black;
 	color: white;
 	text-align: center;
-	padding: 10px;
+	padding: 20px;
 }
 
 .hours_heading h1{
@@ -428,7 +465,7 @@ nav li{
 @media screen and (min-width:768px) and (max-width: 1023px){
 
 .hours{
-	margin-top: -1%;
+	margin-top: 3%;
 	background-color: black;
 	color: white;
 	text-align: center;
@@ -896,7 +933,6 @@ figure.snip1104 {
 
 
 
-
 .column img{
 	padding: 15px;
 	height: auto;
@@ -910,26 +946,70 @@ figure.snip1104 {
 
 
 
+@media screen and (max-width: 767px){
+		/*Photo decoration */
+.JustPictures{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.photos .row{
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	align-items: center;
+	vertical-align: middle;
+	margin: 0 auto;
+}
+
+.JustPictures .column{
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	align-items: center;
+	vertical-align: middle;
+	margin: 0 auto;
+}
+
+.JustPictures img{
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	vertical-align: middle;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 0 auto;
+}
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 767px){
-	/*Photo decoration */
 .photos{
+	width: 100%;
 	text-align: center;
 	align-items: center;
-	align-content: center;
 	margin-top: 10%;
 	overflow: hidden;
+	margin-bottom: 3%;
+	padding-bottom: 5px;
 }
 
 .row{
 	width: 100%;
 	display: flex;
-	padding: 0;
-	margin: 0;
 	flex-direction: column;
 	justify-content: space-evenly;
 	overflow: hidden;
+	text-align: center;
+	align-items: center;
 }
  
 .column{
@@ -937,16 +1017,17 @@ figure.snip1104 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	overflow: hidden;
 }
 
 .column img{
-	padding: 15px;
 	width: 100%;
 	height: auto;
 	overflow: hidden;
 	text-align: center;
 	align-content: center;
 	align-items: center;
+
 }
 
 }
@@ -963,6 +1044,7 @@ figure.snip1104 {
 	align-content: center;
 	margin-top: 10%;
 	overflow: hidden;
+	margin-bottom: 15%;
 }
 
 .row{
@@ -970,14 +1052,14 @@ figure.snip1104 {
 	display: flex;
 	padding: 0;
 	margin: 0;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-evenly;
 }
  
 .column{
 	width: 100%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-evenly;
 }
 
