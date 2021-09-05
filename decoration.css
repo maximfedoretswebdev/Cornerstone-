@@ -1162,3 +1162,85 @@ form button{
 	margin-top: 4%;
 	margin-bottom: 40%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------- Manager Page ----------------------------- */
+#displayGrt{
+	padding: 20px 20px 10px 20px;
+	text-align: center;
+}
+
+.managerName{
+	padding: 20px;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+#displayDate{
+	padding: 10;
+	text-align: center;
+	color: grey;
+}
+
+.managePeople h4{
+	text-align: left;
+	margin: 3% 0 0 2.5%;
+	padding: 25px;
+	color: black;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+
+.managePeople h4{
+	margin-bottom: 2%;
+}
+
+.managePeople ul{
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.managePeople li{
+	text-decoration: none;
+	text-align: left;
+	margin: 1.5% 0 0 2.5%;
+	font-weight: bolder;
+}
+
+.managePeople li:hover{
+	text-decoration: underline;
+	color: rgb(37, 37, 37);
+}
+
+#AddPerson{
+	margin: 1% 0 0 5%;
+}
+
+@media screen and (max-width: 767px){
+	.managePeople h4{
+		text-align: center;
+		margin: 4% 0 0 2.5%;
+		padding: 25px;
+		color: black;
+		font-weight: bolder;
+		text-decoration: underline;
+	}
+	.managePeople li{
+		text-decoration: none;
+		text-align: left;
+		margin: 2% 0 0 2.5%;
+		font-weight: bolder;
+		font-size: 1.2rem;
+	}
+}
